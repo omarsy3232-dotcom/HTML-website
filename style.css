@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo {
+    font-weight: 700;
+    color: #0076f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1.6em;
+}
+header .navigation a {
+    color: #0076f4;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+header .navigation a:hover {
+    color: #001cb8;
+}
+section {
+    padding: 100px 200px;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./rear-view-programmer-working-all-night-long.png) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero *{
+    z-index: 1;
+}
+.hero h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+.hero h2.web {
+    display: inline-block;
+    color: #0076f4;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.hero h3 {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.hero .btn {
+    color: #fff;
+    background-color: #0076f4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+     padding: 0.9375em 2.1875em;
+     letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition:  0.7s ease;
+}
+.hero .btn:hover {
+    background-color: #001cb8;
+    transform: scale(1.1);
+}
+.social-icons a{
+    Color: #ffffff;
+    font-size: 1.5em;
+    padding-right: 20px;
+    transition: 0.3s ease;
+}
+.social-icons a:hover {
+    color: #435cef;
+    transform: scale(1.2);
+}
+#cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cards .title {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.icon {
+    font-size: 8em;
+    color: #3a6cf4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* .projects{
+    background-color: #000016;
+    background-size: solid;
+    background-position: center;
+    background-attachment: fixed;
+
+
+} */
+.projects .title {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.projects .content {
+    margin-top: 30px;
+
+
+}
+.project-card {
+    background-color: #ffffff;
+    border: 3px solid #ddd;
+    min-height: 2Gem;
+    width: 26em;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px;
+    transition: 0.7s ease;
+
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+.project-card img {
+    width: 100%;
+    
+}
+.project-card .project-info {
+    padding: 1em;
+}
+.project-category {
+    color: #000000;
+    font-size: 0.9em;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.project-link {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.project-link:hover {
+    color: #001cb8;
+    transform: scale(1.1);
+    
+}
+.contact {
+    margin-top: 100px;
+    background-color: #ffffff;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     padding: 100px 200px;
+
+    
+}
+.contact .title {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.contact .icon {
+    font-size: 4em;
+
+
+}
+.contact .info h3 {
+    color: #000000;
+
+}
+.contact .info p a {
+    color: #000000;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+.contact .info p a:hover {
+    color: #001cb8;
+    transform: scale(1.1);
+}
